@@ -9,8 +9,7 @@ public class Date {
     private String Team2;
     private String D1;
     private String T1;
-    private Image ImageTeam1;
-    private Image ImageTeam2;
+
 
     public Date(String title1, String date1, String team1, String team2, String d1, String t1) {
         Title1 = title1;
@@ -19,8 +18,7 @@ public class Date {
         Team2 = team2;
         D1 = d1;
         T1 = t1;
-        ImageTeam1 = imageTeam1;
-        ImageTeam2 = imageTeam2;
+
     }
 
     public String getTitle1() {
@@ -71,19 +69,6 @@ public class Date {
         T1 = t1;
     }
 
-    public Image getImageTeam1() {
-        return ImageTeam1;
-    }
 
-    public void setImageTeam1(Image imageTeam1) {
-        ImageTeam1 = imageTeam1;
-    }
-
-    public Image getImageTeam2() {
-        return ImageTeam2;
-    }
-
-    public void setImageTeam2(Image imageTeam2) {
-        ImageTeam2 = imageTeam2;
-    }
 }
+

@@ -4,7 +4,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -19,8 +18,6 @@ public class DatesAdapter extends RecyclerView.Adapter<DatesAdapter.MyViewHolder
         // each data item is just a string in this case
         TextView Title1;
         TextView Date1;
-        ImageView ImageTeam1;
-        ImageView ImageTeam2;
         TextView Team1;
         TextView Team2;
         TextView D1;
@@ -30,8 +27,6 @@ public class DatesAdapter extends RecyclerView.Adapter<DatesAdapter.MyViewHolder
             super(v);
             Title1 = (TextView) v.findViewById(R.id.Title1);
             Date1 = (TextView) v.findViewById(R.id.Date1);
-            ImageTeam1 = (ImageView) v.findViewById(R.id.ImageTeam1);
-            ImageTeam2 = (ImageView) v.findViewById(R.id.ImageTeam2);
             Team1 = (TextView) v.findViewById(R.id.Team1);
             Team2 = (TextView) v.findViewById(R.id.Team2);
             D1 = (TextView) v.findViewById(R.id.D1);
