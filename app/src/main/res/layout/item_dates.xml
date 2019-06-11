@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/Title1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Fase de Grupos" />
+
+    <TextView
+        android:id="@+id/Date1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha 1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="46dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/ImageTeam1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/brasil" />
+
+            <ImageView
+                android:id="@+id/ImageTeam2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/bolivia" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="52dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/Team1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Brasil" />
+
+            <TextView
+                android:id="@+id/Team2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bolivia" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="51dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/D1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Vie. 14/06"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/T1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7:30 p.m"
+                android:gravity="center"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
