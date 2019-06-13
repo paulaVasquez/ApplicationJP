@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         button = (Button) findViewById ( R.id.button_Dates );
         button.setOnClickListener ( this );
+        button = (Button) findViewById ( R.id.button_favorites );
+        button.setOnClickListener ( this );
     }
 
     @Override
@@ -24,6 +26,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         switch (v.getId ()){
             case R.id.button_Dates:
                 Intent intent = new Intent(MainActivity.this,DatesActivity.class);
+                startActivity ( intent );
+                break;
+            case R.id.button_favorites:
+                intent = new Intent ( MainActivity.this, FavoritesActivity.class);
                 startActivity ( intent );
                 break;
             default:
