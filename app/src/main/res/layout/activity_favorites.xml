@@ -26,21 +26,21 @@
         app:layout_constraintVertical_bias="0.012">
 
         <Button
-            android:id="@+id/button_events"
+            android:id="@+id/button_events_F"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Eventos" />
 
         <Button
-            android:id="@+id/button_Dates"
+            android:id="@+id/button_Dates_F"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Fechas" />
 
         <Button
-            android:id="@+id/button_favorites"
+            android:id="@+id/button_favorites_F"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
