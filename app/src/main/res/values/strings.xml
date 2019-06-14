@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">AppJP</string>
+
+    <string name="b_events"><u>Eventos</u></string>
 </resources>

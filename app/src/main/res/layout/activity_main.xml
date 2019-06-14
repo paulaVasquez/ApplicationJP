@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bagraund"
     tools:context=".MainActivity">
 
     <TextView
@@ -12,11 +13,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="3dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Proximos Partidos"
+        android:text="Proximos Partidos:"
+        android:textColor="#FCF9F9"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.079"
@@ -26,13 +30,14 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="402dp"
-        android:layout_height="53dp"
+        android:layout_width="398dp"
+        android:layout_height="52dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
+        android:background="#8DC515"
         android:gravity="center"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
@@ -42,13 +47,16 @@
 
         <Button
             android:id="@+id/button_events"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Eventos" />
+            android:text="@string/b_events"
+            android:textColor="#FFFFFF" />
 
         <Button
             android:id="@+id/button_Dates"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -56,6 +64,7 @@
 
         <Button
             android:id="@+id/button_favorites"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -72,7 +81,10 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
-        android:text="Partidos Jugados"
+        android:text="Partidos Jugados:"
+        android:textColor="#FFFCFC"
+        android:textSize="18sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/scrollView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.077"
@@ -85,7 +97,7 @@
         android:layout_height="174dp"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="8dp"
@@ -102,7 +114,7 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="350dp"
+                android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:gravity="center"
                 android:orientation="horizontal"
@@ -117,81 +129,24 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/NameTeam"
+                        android:id="@+id/NameTeam1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Brasil-Bolivia" />
+                        android:gravity="center"
+                        android:text="Bolivia-Peru"
+                        android:textColor="#000000" />
 
                 </LinearLayout>
 
                 <ImageView
-                    android:id="@+id/imageView1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/brasil" />
-
-                <ImageView
-                    android:id="@+id/imageView2"
+                    android:id="@+id/image1View1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     app:srcCompat="@drawable/bolivia" />
 
-                <LinearLayout
-                    android:layout_width="79dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/Time"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="7:30p.m." />
-
-                    <TextView
-                        android:id="@+id/Date"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Vie 14/6" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="350dp"
-                android:layout_height="55dp"
-                android:gravity="center"
-                android:orientation="horizontal"
-                tools:layout_editor_absoluteX="30dp"
-                tools:layout_editor_absoluteY="137dp">
-
-                <LinearLayout
-                    android:layout_width="104dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/NameTeam"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Venezuela-Peru" />
-
-                </LinearLayout>
-
                 <ImageView
-                    android:id="@+id/imageView3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/venezuela" />
-
-                <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/image1View2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -205,22 +160,26 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/Time"
+                        android:id="@+id/Time1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="2:00p.m." />
+                        android:gravity="center"
+                        android:text="4:30 p.m."
+                        android:textColor="#000000" />
 
                     <TextView
-                        android:id="@+id/Date"
+                        android:id="@+id/Date1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Sab 15/6" />
+                        android:gravity="center"
+                        android:text="Mar 18/6"
+                        android:textColor="#000000" />
                 </LinearLayout>
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="350dp"
+                android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:gravity="center"
                 android:orientation="horizontal"
@@ -235,26 +194,28 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/NameTeam"
+                        android:id="@+id/NameTeam2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Argentina-Colombia" />
+                        android:gravity="center"
+                        android:text="Brasil-Venezuela"
+                        android:textColor="#000000" />
 
                 </LinearLayout>
 
                 <ImageView
-                    android:id="@+id/imageView5"
+                    android:id="@+id/image2View1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/argentina" />
+                    app:srcCompat="@drawable/brasil" />
 
                 <ImageView
-                    android:id="@+id/imageView6"
+                    android:id="@+id/image2View2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/colombia" />
+                    app:srcCompat="@drawable/venezuela" />
 
                 <LinearLayout
                     android:layout_width="79dp"
@@ -264,22 +225,26 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/Time"
+                        android:id="@+id/Time2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="5:00p.m." />
+                        android:gravity="center"
+                        android:text="7:30 p.m."
+                        android:textColor="#000000" />
 
                     <TextView
-                        android:id="@+id/Date"
+                        android:id="@+id/Date2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Sab 15/6" />
+                        android:gravity="center"
+                        android:text="Mar 18/6"
+                        android:textColor="#000000" />
                 </LinearLayout>
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="350dp"
+                android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:gravity="center"
                 android:orientation="horizontal"
@@ -294,22 +259,24 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/NameTeam"
+                        android:id="@+id/NameTeam3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Paraguay-Catar" />
+                        android:gravity="center"
+                        android:text="Colombia-Catar"
+                        android:textColor="#000000" />
 
                 </LinearLayout>
 
                 <ImageView
-                    android:id="@+id/imageView7"
+                    android:id="@+id/image3View1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/paraguay" />
+                    app:srcCompat="@drawable/colombia" />
 
                 <ImageView
-                    android:id="@+id/imageView8"
+                    android:id="@+id/image3View2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -323,22 +290,26 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/Time"
+                        android:id="@+id/Time3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="2:00p.m." />
+                        android:gravity="center"
+                        android:text="4:30 p.m."
+                        android:textColor="#000000" />
 
                     <TextView
-                        android:id="@+id/Date"
+                        android:id="@+id/Date3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Dom 16/6" />
+                        android:gravity="center"
+                        android:text="Mie 19/6"
+                        android:textColor="#000000" />
                 </LinearLayout>
 
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="350dp"
+                android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:gravity="center"
                 android:orientation="horizontal"
@@ -353,26 +324,28 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/NameTeam"
+                        android:id="@+id/NameTeam4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Uruguay-Ecuador" />
+                        android:gravity="center"
+                        android:text="Argentina-Paraguay"
+                        android:textColor="#000000" />
 
                 </LinearLayout>
 
                 <ImageView
-                    android:id="@+id/imageView9"
+                    android:id="@+id/image4View1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/uruguay" />
+                    app:srcCompat="@drawable/argentina" />
 
                 <ImageView
-                    android:id="@+id/imageView10"
+                    android:id="@+id/image4View2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/ecuador" />
+                    app:srcCompat="@drawable/paraguay" />
 
                 <LinearLayout
                     android:layout_width="79dp"
@@ -382,75 +355,20 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/Time"
+                        android:id="@+id/Time4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="5:00p.m." />
+                        android:gravity="center"
+                        android:text="7:30 p.m."
+                        android:textColor="#000000" />
 
                     <TextView
-                        android:id="@+id/Date"
+                        android:id="@+id/Date4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Dom 16/6" />
-                </LinearLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="350dp"
-                android:layout_height="55dp"
-                android:gravity="center"
-                android:orientation="horizontal"
-                tools:layout_editor_absoluteX="30dp"
-                tools:layout_editor_absoluteY="137dp">
-
-                <LinearLayout
-                    android:layout_width="104dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/NameTeam"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Japon-Chile" />
-
-                </LinearLayout>
-
-                <ImageView
-                    android:id="@+id/imageView11"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/japon" />
-
-                <ImageView
-                    android:id="@+id/imageView12"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/chile" />
-
-                <LinearLayout
-                    android:layout_width="79dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/Time"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="6:00p.m." />
-
-                    <TextView
-                        android:id="@+id/Date"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="Vie 14/6" />
+                        android:gravity="center"
+                        android:text="Mie 19/6"
+                        android:textColor="#000000" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -468,7 +386,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="40dp"
         app:layout_constraintBottom_toTopOf="@+id/textView11"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -480,7 +398,7 @@
             android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="350dp"
+                android:layout_width="match_parent"
                 android:layout_height="55dp"
                 android:gravity="center"
                 android:orientation="horizontal"
@@ -495,19 +413,21 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/NameTeam"
+                        android:id="@+id/Teams6"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Japon-Chile" />
+                        android:text="Japon-Chile"
+                        android:textColor="#000000" />
 
                 </LinearLayout>
 
                 <TextView
-                    android:id="@+id/score_team_1"
+                    android:id="@+id/score6_team_1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="0" />
+                    android:text="0"
+                    android:textColor="#000000" />
 
                 <ImageView
                     android:id="@+id/imageView11"
@@ -524,14 +444,331 @@
                     app:srcCompat="@drawable/chile" />
 
                 <TextView
-                    android:id="@+id/score_team_2"
+                    android:id="@+id/score6_team_2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="0" />
+                    android:text="0"
+                    android:textColor="#000000" />
 
                 <Button
-                    android:id="@+id/button_save"
+                    android:id="@+id/button_save6"
+                    style="@style/Widget.AppCompat.Button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Guardar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="137dp">
+
+                <LinearLayout
+                    android:layout_width="104dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Teams1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Brasil-Bolivia"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/score1_team_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/brasil" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/bolivia" />
+
+                <TextView
+                    android:id="@+id/score1_team_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/button_save1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Guardar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="137dp">
+
+                <LinearLayout
+                    android:layout_width="104dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Teams5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Uruguay-Ecuador"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/score5_team_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/imageView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/uruguay" />
+
+                <ImageView
+                    android:id="@+id/imageView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/ecuador" />
+
+                <TextView
+                    android:id="@+id/score5_team_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/button_save5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Guardar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="137dp">
+
+                <LinearLayout
+                    android:layout_width="104dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Teams2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Venezuela-Peru"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/score2_team_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/venezuela" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/peru" />
+
+                <TextView
+                    android:id="@+id/score2_team_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/button_save2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Guardar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="137dp">
+
+                <LinearLayout
+                    android:layout_width="104dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Teams3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Argen-Colombia"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/score3_team_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/argentina" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/colombia" />
+
+                <TextView
+                    android:id="@+id/score3_team_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/button_save3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Guardar" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                tools:layout_editor_absoluteX="30dp"
+                tools:layout_editor_absoluteY="137dp">
+
+                <LinearLayout
+                    android:layout_width="104dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Teams4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Paraguay-Catar"
+                        android:textColor="#000000" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/score4_team_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/paraguay" />
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/catar" />
+
+                <TextView
+                    android:id="@+id/score4_team_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textColor="#000000" />
+
+                <Button
+                    android:id="@+id/button_save4"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -545,18 +782,22 @@
 
     <TextView
         android:id="@+id/textView11"
+        style="@android:style/Widget.Holo.TextView.SpinnerItem"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:text="COPA AMERICA 2019"
+        android:textColor="#F50404"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/scrollView3" />
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="1.0" />
 
 </android.support.constraint.ConstraintLayout>
