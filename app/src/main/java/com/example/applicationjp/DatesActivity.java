@@ -44,6 +44,7 @@ public class DatesActivity extends AppCompatActivity implements View.OnClickList
         recyclerView.setLayoutManager ( layoutManager );
     }
 
+
     @Override
     public void onClick(View view) {
         switch (view.getId ()) {
