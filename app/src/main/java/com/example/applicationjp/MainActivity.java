@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         recyclerView.setLayoutManager ( new LinearLayoutManager(this) );
         recyclerView.setHasFixedSize ( true );
 
-        RecyclerViewAdapterSave adapterSave = new RecyclerViewAdapterSave ( listdates );
+        RecyclerViewAdapterSave adapterSave = new RecyclerViewAdapterSave ( listdates, context );
         adapterSave.setOnClickListener(new View.OnClickListener (){
 
             @Override
@@ -58,7 +58,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 ConectionSQLiteHelper conn=new ConectionSQLiteHelper ( getApplicationContext (), "bd_item",null,1 );
 
                 SQLiteDatabase db=conn.getWritableDatabase ();
-
                 ContentValues values=new ContentValues ( );
                 values.put ( Utilities.CAMPO_EQUIPOS,listdates.get ( recyclerView.getChildAdapterPosition ( view )).getEquipos () );
                 values.put ( Utilities.CAMPO_RESULTADO1,listdates.get ( recyclerView.getChildAdapterPosition ( view ) ).getResult1 () );
@@ -84,6 +83,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.button_Dates:
                 Intent intent = new Intent(MainActivity.this,DatesActivity.class);
                 startActivity ( intent );
+
                 break;
             case R.id.button_favorites:
                 intent = new Intent ( MainActivity.this, FavoritesActivity.class);

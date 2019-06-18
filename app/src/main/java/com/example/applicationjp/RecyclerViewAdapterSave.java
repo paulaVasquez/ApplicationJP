@@ -29,7 +29,7 @@ public class RecyclerViewAdapterSave extends RecyclerView.Adapter<RecyclerViewAd
     ArrayList<Save> mData;
     private View.OnClickListener listener;
 
-    public RecyclerViewAdapterSave( ArrayList<Save> mData) {
+    public RecyclerViewAdapterSave( ArrayList<Save> mData, Context context) {
         this.context = context;
         this.mData = mData;
     }
@@ -41,7 +41,7 @@ public class RecyclerViewAdapterSave extends RecyclerView.Adapter<RecyclerViewAd
     @Override
     public MyViewHolder onCreateViewHolder( ViewGroup parent, int viewType) {
         //final Save dates = mData.get ( i );
-        View view = LayoutInflater.from ( parent.getContext () ).inflate ( R.layout.item_save,parent,false );
+        View view = LayoutInflater.from ( parent.getContext () ).inflate ( R.layout.item_save, parent,false );
         view.setOnClickListener (this);
         return new MyViewHolder ( view );
     }
