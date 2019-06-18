@@ -13,6 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import com.example.applicationjp.boardsDB.ConectionSQLiteHelper;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -42,6 +44,8 @@ public class DatesActivity extends AppCompatActivity implements View.OnClickList
         layoutManager.setOrientation ( LinearLayoutManager.VERTICAL );
         recyclerView.setAdapter ( new RecyclerViewAdapter (getApplicationContext (), listdates ) );
         recyclerView.setLayoutManager ( layoutManager );
+
+       // ConectionSQLiteHelper conn=new ConectionSQLiteHelper ( this, "bd_item",null,1 );
     }
 
 
@@ -59,5 +63,7 @@ public class DatesActivity extends AppCompatActivity implements View.OnClickList
             default:
                 break;
         }
+
+
     }
 }
