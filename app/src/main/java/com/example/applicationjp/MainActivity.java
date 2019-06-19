@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 //Long idResultante=db.insert ( Utilities.TABLA_ITEM,Utilities.CAMPO_ID,values );
                 //Toast.makeText ( getApplicationContext (),"Id Registro: "+idResultante,Toast.LENGTH_SHORT ).show ();
                 db.close ();
-                Toast.makeText ( getApplicationContext (),"Registro: "+Utilities.CAMPO_EQUIPOS,Toast.LENGTH_SHORT).show ();
+                Toast.makeText ( getApplicationContext (),"Añadido a Favoritos:",Toast.LENGTH_SHORT).show ();
                 //Log.d ("ok", "connected");
             }
         });

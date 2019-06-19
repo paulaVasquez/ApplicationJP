@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+<string name="app_name">AppJP</string>
+
+<string name="b_events"><u>Events</u></string>
+<string name="Team1"><u>Brazil</u></string>
+<string name="Team2"><u>Bolivia</u></string>
+<string name="Score1"><u>3</u></string>
+<string name="Score2"><u>0</u></string>
+<string name="todo_feed">http://10.0.2.2:8080/datescup.json</string>
+</resources>

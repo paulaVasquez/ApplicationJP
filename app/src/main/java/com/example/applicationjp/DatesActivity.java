@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.text.Layout;
+import android.text.method.ScrollingMovementMethod;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -50,12 +51,13 @@ public class DatesActivity extends AppCompatActivity implements View.OnClickList
             for(int i = 0; i< jsonArray.length (); i++){
                 JSONObject jsonObject = jsonArray.getJSONObject ( i );
 
-                parseo +="***:" + jsonObject.getString("teamone") + "   ["+ jsonObject.getString("scoreteamone")+"]   "+"      vs      "+"   ["+ jsonObject.getString("scoreteamone")+"]   "+jsonObject.getString("teamtwo")+ "***:\n"+
+                parseo +="***:" + jsonObject.getString("teamone") + "   ["+ jsonObject.getString("scoreteamone")+"]   "+"      vs      "+"   ["+ jsonObject.getString("scoreteamtwo")+"]   "+jsonObject.getString("teamtwo")+ "***:\n"+
                         "-----------------------------\n" +    "| Estadio : " + jsonObject.get("stadium")+" |\n" +"-----------------------------\n\n\n";
 
 
             }
             txtparseo.setText ( parseo );
+            txtparseo.setMovementMethod ( new ScrollingMovementMethod () );
 
         } catch (ExecutionException e) {
             e.printStackTrace ( );
